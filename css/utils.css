@@ -1,0 +1,7 @@
+.f-direction-column {
+    flex-direction: column;
+}
+
+.gap-sm {
+    gap: calc(1.5rem * 0.5);
+}

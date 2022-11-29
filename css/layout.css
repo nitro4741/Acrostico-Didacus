@@ -1,0 +1,125 @@
+/*.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}*/
+
+.section {
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem;
+}
+
+.section--hero {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.section__name {
+    /*font-family: mario;*/
+    display: flex;
+    font-size: 4rem;
+    font-weight: 900;
+    text-decoration: none;
+    animation: zoom 1s ease-in-out 1s infinite alternate;
+}
+
+.section__letter {
+    /*display: flex;*/
+    position: relative;
+    transition: filter 1s ease-in-out;
+}
+
+.section__letter:hover {
+    filter: brightness(5);
+    transform: scale(2);
+
+}
+
+
+.section__letter::before {
+    content: var(--letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(.25rem);
+    transform: scale(1.125);
+}
+
+.section__letter::after{
+    content: var(--letter);
+    position: absolute;
+    top: 87.5%;
+    left: 0;
+    filter: blur(0.125rem);
+    transform: rotateX(150deg)
+}
+
+.section__letter:nth-child(1) {
+    color: rgb(183, 36, 10);
+}
+
+.section__letter:nth-child(2) {
+
+    color: rgb(7, 160, 255);
+}
+
+.section__letter:nth-child(3) {
+
+    color: rgb(221, 221, 28);
+}
+
+.section__letter:nth-child(4) {
+
+    color: rgb(7, 160, 255);
+}
+
+.section__letter:nth-child(5) {
+
+    color: rgb(15, 149, 6);
+}
+
+
+.section__verse {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 0.625rem rgb(39, 109, 223);
+}
+
+.section__verse::first-letter {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1024px;  
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.f-elements {
+    display: flex;
+}
+
+
+.f-elements--center {
+    align-items: center;
+    justify-content: center;
+}
+
+
+@font-face {
+    font-family: mario;
+    src: url(/font/CHLORINP.TTF);
+}
+
+@media(min-width: 768px) {
+    .section__name {
+        font-size: 6rem;
+
+    }
+    .section__verse {
+        font-size: 2rem;
+    }
+}

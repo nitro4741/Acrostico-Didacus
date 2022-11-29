@@ -1,0 +1,14 @@
+@import './layout.css';
+@import './variables.css';
+@import './animation.css';
+@import './list.css';
+@import './utils.css';
+
+
+.body {
+    background-image: linear-gradient(var(--primary-theme-color), var(--secundary-theme-color));
+    background-image: linear-gradient(rgb(99, 170, 236), gray, rgb(12, 145, 12)) ;
+    color: var(--primary-text-color);
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}

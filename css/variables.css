@@ -1,0 +1,8 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: rgb(255, 45, 188);
+    --secundary-theme-color: white;
+    --primary-text-color: black;
+    --primary-highlight-color: rgb(119, 119, 119);   
+
+}
